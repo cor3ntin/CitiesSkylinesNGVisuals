@@ -1,0 +1,12 @@
+Bundles/
+Libs/
+PostProcessing/
+Source/bin/
+Source/obj/
+Unity/Unity.userprefs
+*.meta
+*.dll
+Unity/Assets/Standard\ Assets/
+Unity/obj
+Unity/Library
+Unity/ProjectSettings

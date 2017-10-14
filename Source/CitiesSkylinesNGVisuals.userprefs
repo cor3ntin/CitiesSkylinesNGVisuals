@@ -1,0 +1,61 @@
+﻿<Properties StartupConfiguration="{CA6E7972-AE67-4DA6-9546-70463EA83618}|Unity">
+  <MonoDevelop.Ide.ItemProperties.CitiesSkylinesNGVisuals PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CSNGVisualsMod.cs">
+    <Files>
+      <File FileName="CSNGVisuals.cs" Line="45" Column="23" />
+      <File FileName="GUI/SettingsWindow.cs" Line="75" Column="48" />
+      <File FileName="PostProcessing/Components/MotionBlurComponent.cs" Line="320" Column="26" />
+      <File FileName="PostProcessing/PostProcessingBehaviour.cs" Line="13" Column="14" />
+      <File FileName="GUI/AmbientOcclusionPanel.cs" Line="11" Column="27" />
+      <File FileName="GUI/GUIUtils.cs" Line="36" Column="27" />
+      <File FileName="GUI/AntiAliasingPanel.cs" Line="30" Column="45" />
+      <File FileName="PostProcessing/Models/AntialiasingModel.cs" Line="243" Column="1" />
+      <File FileName="PostProcessing/Components/FxaaComponent.cs" Line="19" Column="51" />
+      <File FileName="GUI/BloomPanel.cs" Line="66" Column="41" />
+      <File FileName="PostProcessing/Models/BloomModel.cs" Line="81" Column="25" />
+      <File FileName="PostProcessing/PostProcessingProfile.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Components/AmbientOcclusionComponent.cs" Line="84" Column="55" />
+      <File FileName="Settings.cs" Line="12" Column="58" />
+      <File FileName="Utils.cs" Line="18" Column="2" />
+      <File FileName="CSNGVisualsExtension.cs" Line="28" Column="23" />
+      <File FileName="PostProcessing/Models/AmbientOcclusionModel.cs" Line="1" Column="1" />
+      <File FileName="CSNGVisualsMod.cs" Line="16" Column="37" />
+      <File FileName="PostProcessing/Models/ChromaticAberrationModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/ColorGradingModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/DepthOfFieldModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/DitheringModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/EyeAdaptationModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/FogModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/GrainModel.cs" Line="6" Column="18" />
+      <File FileName="PostProcessing/Models/MotionBlurModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/ScreenSpaceReflectionModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/UserLutModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Models/VignetteModel.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/PostProcessingComponent.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/PostProcessingContext.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/PostProcessingModel.cs" Line="1" Column="1" />
+      <File FileName="Legacy/DepthOfField.cs" Line="9" Column="26" />
+      <File FileName="Legacy/PostEffectsBase.cs" Line="86" Column="17" />
+      <File FileName="PostProcessing/Components/BloomComponent.cs" Line="32" Column="48" />
+      <File FileName="PostProcessing/Components/TaaComponent.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Components/BuiltinDebugViewsComponent.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Components/ColorGradingComponent.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Components/DepthOfFieldComponent.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/Components/GrainComponent.cs" Line="60" Column="52" />
+      <File FileName="GUI/IEffectMenu.cs" Line="1" Column="1" />
+      <File FileName="PostProcessing/SettingsTooltip.cs" Line="1" Column="1" />
+      <File FileName="GUI/SunShaftsPanel.cs" Line="36" Column="2" />
+      <File FileName="SunShafts/SunShafts.cs" Line="58" Column="13" />
+      <File FileName="PostProcessing/Utils/MaterialFactory.cs" Line="15" Column="21" />
+      <File FileName="PostProcessing/Utils/RenderTextureFactory.cs" Line="1" Column="1" />
+      <File FileName="SunShafts/SunShaftsSettings.cs" Line="9" Column="73" />
+      <File FileName="PostProcessing/Utils/GraphicsUtils.cs" Line="134" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

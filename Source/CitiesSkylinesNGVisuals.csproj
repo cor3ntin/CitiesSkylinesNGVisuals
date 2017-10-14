@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA6E7972-AE67-4DA6-9546-70463EA83618}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CitiesSkylinesNGVisuals</RootNamespace>
+    <AssemblyName>CitiesSkylinesNGVisuals</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>post-build.sh "${TargetPath}"</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterExecute</type>
+          <command></command>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>post-build.sh "${TargetPath}"</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PostProcessing\PostProcessingBehaviour.cs" />
+    <Compile Include="PostProcessing\PostProcessingComponent.cs" />
+    <Compile Include="PostProcessing\PostProcessingContext.cs" />
+    <Compile Include="PostProcessing\PostProcessingModel.cs" />
+    <Compile Include="PostProcessing\PostProcessingProfile.cs" />
+    <Compile Include="PostProcessing\Attributes\GetSetAttribute.cs" />
+    <Compile Include="PostProcessing\Attributes\MinAttribute.cs" />
+    <Compile Include="PostProcessing\Attributes\TrackballAttribute.cs" />
+    <Compile Include="PostProcessing\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="PostProcessing\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="PostProcessing\Components\BloomComponent.cs" />
+    <Compile Include="PostProcessing\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="PostProcessing\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="PostProcessing\Components\ColorGradingComponent.cs" />
+    <Compile Include="PostProcessing\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="PostProcessing\Components\DitheringComponent.cs" />
+    <Compile Include="PostProcessing\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="PostProcessing\Components\FogComponent.cs" />
+    <Compile Include="PostProcessing\Components\FxaaComponent.cs" />
+    <Compile Include="PostProcessing\Components\GrainComponent.cs" />
+    <Compile Include="PostProcessing\Components\MotionBlurComponent.cs" />
+    <Compile Include="PostProcessing\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="PostProcessing\Components\TaaComponent.cs" />
+    <Compile Include="PostProcessing\Components\UserLutComponent.cs" />
+    <Compile Include="PostProcessing\Components\VignetteComponent.cs" />
+    <Compile Include="PostProcessing\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="PostProcessing\Models\AntialiasingModel.cs" />
+    <Compile Include="PostProcessing\Models\BloomModel.cs" />
+    <Compile Include="PostProcessing\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="PostProcessing\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="PostProcessing\Models\ColorGradingModel.cs" />
+    <Compile Include="PostProcessing\Models\DepthOfFieldModel.cs" />
+    <Compile Include="PostProcessing\Models\DitheringModel.cs" />
+    <Compile Include="PostProcessing\Models\EyeAdaptationModel.cs" />
+    <Compile Include="PostProcessing\Models\FogModel.cs" />
+    <Compile Include="PostProcessing\Models\GrainModel.cs" />
+    <Compile Include="PostProcessing\Models\MotionBlurModel.cs" />
+    <Compile Include="PostProcessing\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="PostProcessing\Models\UserLutModel.cs" />
+    <Compile Include="PostProcessing\Models\VignetteModel.cs" />
+    <Compile Include="PostProcessing\Utils\ColorGradingCurve.cs" />
+    <Compile Include="PostProcessing\Utils\GraphicsUtils.cs" />
+    <Compile Include="PostProcessing\Utils\MaterialFactory.cs" />
+    <Compile Include="PostProcessing\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="CSNGVisualsExtension.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="PostProcessing\SettingsTooltip.cs" />
+    <Compile Include="CSNGVisualsMod.cs" />
+    <Compile Include="CSNGVisuals.cs" />
+    <Compile Include="GUI\AmbientOcclusionPanel.cs" />
+    <Compile Include="GUI\SettingsWindow.cs" />
+    <Compile Include="GUI\IEffectMenu.cs" />
+    <Compile Include="GUI\GUIUtils.cs" />
+    <Compile Include="GUI\AntiAliasingPanel.cs" />
+    <Compile Include="GUI\BloomPanel.cs" />
+    <Compile Include="Legacy\DepthOfField.cs" />
+    <Compile Include="Legacy\PostEffectsBase.cs" />
+    <Compile Include="GUI\SunShaftsPanel.cs" />
+    <Compile Include="SunShafts\SunShafts.cs" />
+    <Compile Include="SunShafts\SunShaftsSettings.cs" />
+    <Compile Include="Legacy\Bloom.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy TabWidth="4" TabsToSpaces="True" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" FileWidth="120" EolMarker="Unix" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="False" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="False" NewLinesForBracesInAccessors="False" NewLinesForBracesInAnonymousMethods="False" NewLinesForBracesInControlBlocks="False" NewLinesForBracesInAnonymousTypes="False" NewLinesForBracesInObjectCollectionArrayInitializers="False" NewLinesForBracesInLambdaExpressionBody="False" NewLineForElse="False" NewLineForCatch="False" NewLineForFinally="False" NewLineForMembersInObjectInit="False" NewLineForMembersInAnonymousTypes="False" NewLineForClausesInQuery="False" SpacingAfterMethodDeclarationName="True" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="True" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="True" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="GUI\" />
+    <Folder Include="SunShafts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PopsApiWrapper">
+      <HintPath>..\Libs\PopsApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\Libs\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>..\Libs\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\Libs\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\Libs\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\Libs\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="ColossalManaged">
+      <HintPath>..\Libs\ColossalManaged.dll</HintPath>
+    </Reference>
+    <Reference Include="ICities">
+      <HintPath>..\Libs\ICities.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>..\Libs\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
